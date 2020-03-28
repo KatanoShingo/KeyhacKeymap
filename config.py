@@ -25,3 +25,5 @@ def configure(keymap):
 # アンダースコア入れ替え
         keymap_global[ "Underscore" ] = "S-Underscore"
         keymap_global[ "S-Underscore" ] = "Underscore"
+#無変換をWinキーに置き換え
+        keymap.replaceKey( 29, "LWin" )
