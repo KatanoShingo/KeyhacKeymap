@@ -22,3 +22,6 @@ def configure(keymap):
         keymap_global[ "RS-LS-C" ] = "C-3"
         keymap_global[ "RS-LS-V" ] = "C-4"
         keymap_global[ "RS-LS-B" ] = "C-5"
+# アンダースコア入れ替え
+        keymap_global[ "Underscore" ] = "S-Underscore"
+        keymap_global[ "S-Underscore" ] = "Underscore"
