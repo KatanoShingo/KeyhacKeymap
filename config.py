@@ -16,6 +16,9 @@ def configure(keymap):
 #ウィンドウの移動の配置変更
         keymap_global[ "LC-LW-Left" ] = "LW-LS-Left"
         keymap_global[ "LC-LW-Right" ] = "LW-LS-Right"
+#仮想ウデスクトップ移動
+        keymap_global[ "LC-LW-LA-Left" ] = "LC-LW-Right"
+        keymap_global[ "LC-LW-LA-Right" ] = "LC-LW-Left"
 #クローム用タブ切り替え
         keymap_global[ "RS-LS-Z" ] = "C-1"
         keymap_global[ "RS-LS-X" ] = "C-2"
