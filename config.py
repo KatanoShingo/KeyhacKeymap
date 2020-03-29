@@ -16,6 +16,8 @@ def configure(keymap):
 #ウィンドウの移動の配置変更
         keymap_global[ "LC-LW-Left" ] = "LW-LS-Left"
         keymap_global[ "LC-LW-Right" ] = "LW-LS-Right"
+#仮想ウデスクトップ追加
+        keymap_global[ "LC-LW-LA-N" ] = "LC-LW-D"
 #仮想ウデスクトップ移動
         keymap_global[ "LC-LW-LA-Left" ] = "LC-LW-Right"
         keymap_global[ "LC-LW-LA-Right" ] = "LC-LW-Left"
