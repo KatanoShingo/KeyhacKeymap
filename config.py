@@ -26,8 +26,17 @@ def configure(keymap):
 # アンダースコア入れ替え
         keymap_global[ "Underscore" ] = "S-Underscore"
         keymap_global[ "S-Underscore" ] = "Underscore"
-#無変換をWinキーに置き換え
-        keymap.replaceKey( 29, "LWin" )
+#無変換、変換を未定義の仮想キーに置き換え
+        keymap.replaceKey( 28, 58 )
+        keymap.replaceKey( 29, 59 )
+#IMEオン
+        def ime_on():
+            keymap.getWindow().setImeStatus(1)
+        keymap_global[ "(58)" ] =  ime_on
+#IMEオフ
+        def ime_off():
+            keymap.getWindow().setImeStatus(0)
+        keymap_global[ "(59)" ] = ime_off
 
         keymap_chrome = keymap.defineWindowKeymap( exe_name="chrome.exe" )
 #クローム用タブ切り替え
