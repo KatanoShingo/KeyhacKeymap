@@ -31,6 +31,13 @@ def configure(keymap):
 # アンダースコア入れ替え
         keymap_global[ "Underscore" ] = "S-Underscore"
         keymap_global[ "S-Underscore" ] = "Underscore"
+        
+#左十字キー
+        keymap_global[ "RA-W" ] = "Up"
+        keymap_global[ "RA-A" ] = "Left"
+        keymap_global[ "RA-D" ] = "Right"
+        keymap_global[ "RA-S" ] = "Down"
+
 #無変換、変換を未定義の仮想キーに置き換え
         keymap.replaceKey( 28, 58 )
         keymap.replaceKey( 29, 59 )
