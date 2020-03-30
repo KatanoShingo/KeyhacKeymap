@@ -4,8 +4,10 @@ import datetime
 import pyauto
 from keyhac import *
 def configure(keymap):
- #どのウインドウにフォーカスがあっても効くキーマップ
     if 1:
+#ユーザー設定    
+        MultiDisplay = True
+#どのウインドウにフォーカスがあっても効くキーマップ
         keymap_global = keymap.defineWindowKeymap()
 #アプリ切り替え
         keymap_global[ "RS-Z" ] = "Win-1"
@@ -13,9 +15,12 @@ def configure(keymap):
         keymap_global[ "RS-C" ] = "Win-3"
         keymap_global[ "RS-V" ] = "Win-4"
         keymap_global[ "RS-B" ] = "Win-5"
-#ウィンドウの移動の配置変更
-        keymap_global[ "LC-LW-Left" ] = "LW-LS-Left"
-        keymap_global[ "LC-LW-Right" ] = "LW-LS-Right"
+
+        if MultiDisplay:
+                #ウィンドウの移動の配置変更
+                keymap_global[ "LC-LW-Left" ] = "LW-LS-Left"
+                keymap_global[ "LC-LW-Right" ] = "LW-LS-Right"
+
 #仮想ウデスクトップ追加
         keymap_global[ "LC-LW-LA-N" ] = "LC-LW-D"
 #仮想ウデスクトップ削除
