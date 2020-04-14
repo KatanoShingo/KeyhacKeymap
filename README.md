@@ -55,7 +55,7 @@ Mac版はプルリク誰かお願いします
 - <kbd>LShift</kbd>+<kbd>V</kbd>タスクバーのソフト起動4
 - <kbd>LShift</kbd>+<kbd>B</kbd>タスクバーのソフト起動5
 ### その他 
-- <kbd>0</kbd>
+- <kbd>Insert</kbd> BackSpaceキーへ変更
 - <kbd>0</kbd>~<kbd>9</kbd> 数字の半角入力限定化
 - <kbd>A</kbd>~<kbd>Z</kbd> IMEの設定保持
 
