@@ -318,6 +318,8 @@ class MAP:
             keymap.InputKeyCommand( "0" )()
         keymap_global[ "0" ] = num_0
 
+#Insertをbackspaceに置き換え
+        keymap.replaceKey( 45, 8 )
 
 #無変換、変換を未定義の仮想キーに置き換え
         keymap.replaceKey( 28, 58 )
